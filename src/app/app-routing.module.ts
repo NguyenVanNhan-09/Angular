@@ -5,6 +5,7 @@ import { AdminComponent } from './layout/admin/admin.component';
 import { ClientComponent } from './layout/client/client.component';
 import { ProductListComponent } from './component/product-list/product-list.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
+import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 // import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
       },
     ],
   },
+  { path: 'product-detail/:id', component: ProductDetailComponent },
   { path: 'admin', component: AdminComponent },
   { path: '**', component: NotFoundComponent },
 ];
